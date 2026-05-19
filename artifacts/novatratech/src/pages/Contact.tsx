@@ -32,7 +32,7 @@ export default function Contact() {
     try {
 const res = await fetch("/api/contact", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(form) });
 let data: any = {};
-try { data = await res.json(); } catch { /* ignore */ }
+try { data = await res.json(); } catch (_e) { /* non-JSON response */ }
 if (!res.ok) throw new Error(data.error || "Something went wrong. Please try WhatsApp instead.");
     }
   };
