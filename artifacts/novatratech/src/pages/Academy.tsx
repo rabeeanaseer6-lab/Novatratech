@@ -11,7 +11,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingCTA from "@/components/FloatingCTA";
 
-const WHATSAPP = "https://wa.me/923225194889?text=Hello%20NovatraTech%20Academy%2C%20I%27d%20like%20to%20learn%20more";
 
 const fadeUp = { hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0, transition: { duration: 0.55, ease: "easeOut" } } };
 const stagger = { hidden: {}, visible: { transition: { staggerChildren: 0.09 } } };
@@ -469,7 +468,7 @@ export default function Academy() {
                         {item}
                       </div>
                     ))}
-                    <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="mt-4">
+<a href="https://novatratech.online/" target="_blank" rel="noopener noreferrer" className="mt-4">
                       <motion.button data-testid="course-enroll-webdev" whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}
                         className="w-full py-4 rounded-xl font-bold text-base text-white transition-colors shadow-sm flex items-center justify-center gap-2"
                         style={{ background: "linear-gradient(135deg, #7C3AED, #6D28D9)" }}>
@@ -545,7 +544,7 @@ export default function Academy() {
                   </div>
                   <h3 className="font-black text-black text-sm mb-2 pr-16">{course.title}</h3>
                   <p className="text-xs text-black leading-relaxed mb-5">{course.desc}</p>
-                  <a href={WHATSAPP} target="_blank" rel="noopener noreferrer">
+                 <a href="https://novatratech.online/" target="_blank" rel="noopener noreferrer">
                     <span className="flex items-center gap-1.5 text-xs font-bold cursor-pointer hover:gap-2.5 transition-all duration-150" style={{ color: course.color }}>
                       Enroll Now <ArrowRight className="w-3.5 h-3.5" />
                     </span>
@@ -688,14 +687,14 @@ export default function Academy() {
                 </p>
                 <p className="text-black/60 text-sm mb-10">Join 240+ students who chose to invest in themselves.</p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                  <a href={WHATSAPP} target="_blank" rel="noopener noreferrer">
+                  <a href="https://novatratech.online/" target="_blank" rel="noopener noreferrer">
                     <motion.button data-testid="academy-final-cta" whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}
                       className="px-8 py-4 rounded-full font-semibold text-base bg-black text-white hover:bg-[#1a1a1a] shadow-sm transition-colors flex items-center gap-2">
                       <Play className="w-4 h-4" fill="currentColor" />
                       Enroll Now
                     </motion.button>
                   </a>
-                  <a href={WHATSAPP} target="_blank" rel="noopener noreferrer">
+                  <a href="https://novatratech.online/" target="_blank" rel="noopener noreferrer">
                     <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}
                       className="px-8 py-4 rounded-full font-semibold text-base border border-black/12 text-black/70 hover:bg-black/5 hover:text-black transition-all duration-150 flex items-center gap-2">
                       <MessageCircle className="w-4 h-4" /> Join the Community
